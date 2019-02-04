@@ -1,0 +1,16 @@
+.feature-box {
+  background-color: rgba($color-white, 0.8);
+  border-radius: 3px;
+  text-align: center;
+  padding: 2.5rem;
+  &__icon {
+    display: inline-block;
+    font-size: 6rem;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient($color-primary, $color-primary-light);
+  }
+  &__text {
+    font-size: 1.5rem;
+  }
+}

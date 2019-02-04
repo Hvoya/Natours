@@ -1,0 +1,27 @@
+.section-features {
+  padding: 20rem;
+  margin-top: -11rem;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)
+    ),
+    url(/img/nat-4.jpg);
+  transform: skewY(-7deg);
+  background-size: cover;
+  &__row {
+    @include clearfix;
+    max-width: $max-container-width;
+    margin: 0 auto;
+    & > * {
+      width: calc((100% - 12rem) / 4);
+      float: left;
+      &:not(:last-child) {
+        margin-right: 4rem;
+      }
+    }
+  }
+  & > * {
+    transform: skewY(7deg);
+  }
+}

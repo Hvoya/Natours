@@ -1,0 +1,14 @@
+.section-about__info {
+  max-width: 1140px;
+  margin: 0 auto;
+  .section-about__text {
+    width: calc((100%-35px) / 2);
+    float: left;
+  }
+  .section-about__right {
+    width: calc((100%-35px) / 2);
+    float: right;
+  }
+
+  @include clearfix;
+}
