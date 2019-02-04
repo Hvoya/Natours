@@ -3,6 +3,7 @@
     animation: moveInBottom 0.5s ease-out 0.75s;
     animation-fill-mode: backwards;
   }
+  &,
   &:link,
   &:visited {
     text-transform: uppercase;
@@ -14,6 +15,10 @@
 
     transition: all 0.2s;
     position: relative;
+
+    //For button tag
+    border: none;
+    cursor: pointer;
   }
   &:hover {
     transform: translateY(-3px);
@@ -23,7 +28,9 @@
       opacity: 0;
     }
   }
-  &:active {
+  &:active,
+  &:focus {
+    outline: none;
     transform: translateY(-1px);
     box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
   }
